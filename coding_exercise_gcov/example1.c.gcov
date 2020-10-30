@@ -1,0 +1,84 @@
+        -:    0:Source:example1.c
+        -:    0:Graph:example1.gcno
+        -:    0:Data:example1.gcda
+        -:    0:Runs:1
+        -:    1:/* Program takes the input dimensions A and B, and computes the area.
+        -:    2:Incorrect values of A or B that do not result in a square or rectangle are rejected.
+        -:    3:Then it is classified as square or rectangle */
+        -:    4:
+        -:    5:#include <stdio.h>
+        -:    6:
+        -:    7:int quadilateral(int a, int b);
+        -:    8:
+function main called 1 returned 100% blocks executed 100%
+        7:    9:int main()
+        -:   10:{
+        -:   11:char c;
+        -:   12:do {
+        -:   13: int a;
+        -:   14: int b;
+        -:   15:
+        7:   16: printf("enter dimension a \n");
+call    0 returned 100%
+        7:   17: scanf("%d", &a);
+call    0 returned 100%
+        7:   18: printf("enter dimension b \n");
+call    0 returned 100%
+        7:   19: scanf("%d", &b);
+call    0 returned 100%
+        -:   20:
+        7:   21: int ar= quadilateral(a,b);
+call    0 returned 100%
+        -:   22:
+        7:   23: if(!(a==0||b==0)&&(a==b))
+branch  0 taken 71% (fallthrough)
+branch  1 taken 29%
+branch  2 taken 80% (fallthrough)
+branch  3 taken 20%
+branch  4 taken 50% (fallthrough)
+branch  5 taken 50%
+        2:   24: printf("Square with Area %d \n", ar);
+call    0 returned 100%
+        -:   25:
+        5:   26: else if(!(a==0||b==0))
+branch  0 taken 60% (fallthrough)
+branch  1 taken 40%
+branch  2 taken 67% (fallthrough)
+branch  3 taken 33%
+        2:   27: printf("Rectangle with Area %d \n", ar);
+call    0 returned 100%
+        -:   28:
+        -:   29: else
+        3:   30: printf("One of the values was zero \n"); 
+call    0 returned 100%
+        -:   31:
+        7:   32: fflush(stdin);
+call    0 returned 100%
+        7:   33: printf("Continue? (y/n)  \n");
+call    0 returned 100%
+        7:   34: scanf(" %c", &c);
+call    0 returned 100%
+        -:   35:   }
+        7:   36:while(c=='y');
+branch  0 taken 86%
+branch  1 taken 14% (fallthrough)
+        -:   37:}
+        -:   38:
+function quadilateral called 7 returned 100% blocks executed 100%
+        7:   39:int quadilateral(int a,int b)
+        -:   40:{
+        7:   41:int area = a*b;
+        7:   42:if(a==0||b==0)
+branch  0 taken 71% (fallthrough)
+branch  1 taken 29%
+branch  2 taken 20% (fallthrough)
+branch  3 taken 80%
+        3:   43:printf("Incorrect values, try again \n");
+call    0 returned 100%
+        -:   44:else
+        4:   45:printf("area %d \n", area);
+call    0 returned 100%
+        -:   46:
+        7:   47:return area;
+        -:   48:}
+        -:   49:
