@@ -1,0 +1,66 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  char c;
+
+    char c;
+  <D.2322>:;
+  {
+    int a;
+    int b;
+    int ar = quadilateral (a, b);
+
+        int a;
+        int b;
+    printf ((const char * restrict) "enter dimension a \n");
+    scanf ((const char * restrict) "%d", &a);
+    printf ((const char * restrict) "enter dimension b \n");
+    scanf ((const char * restrict) "%d", &b);
+        int ar = quadilateral (a, b);
+    if ((a != 0 && b != 0) && a == b)
+      {
+        printf ((const char * restrict) "Square with Area %d \n", ar);
+      }
+    else
+      {
+        if (a != 0 && b != 0)
+          {
+            printf ((const char * restrict) "Rectangle with Area %d \n", ar);
+          }
+        else
+          {
+            printf ((const char * restrict) "One of the values was zero \n");
+          }
+      }
+    fflush (stdin);
+    printf ((const char * restrict) "Continue? (y/n)  \n");
+    scanf ((const char * restrict) " %c", &c);
+  }
+  if (c == 121) goto <D.2322>; else goto <D.2323>;
+  <D.2323>:;
+}
+return 0;
+
+
+;; Function quadilateral (null)
+;; enabled by -tree-original
+
+
+{
+  int area = a * b;
+
+    int area = a * b;
+  if (a == 0 || b == 0)
+    {
+      printf ((const char * restrict) "Incorrect values, try again \n");
+    }
+  else
+    {
+      printf ((const char * restrict) "area %d \n", area);
+    }
+  return area;
+}
+
