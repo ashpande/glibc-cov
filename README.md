@@ -17,7 +17,7 @@ As of 19/11/2020 , the main patch is ready. All the files that were modified as 
     
 To run glibc with coverage, in the build directory first build glibc with shared libraries, then execute the following command in the build directory:
 
-    ../configure --disable-shared --enable-gcov --disable-shared --without-selinux --disable-nscd --prefix=path/to/glibc/install
+    ../configure --disable-shared --enable-gcov --without-selinux --disable-nscd --prefix=path/to/glibc/install
 
 
     
