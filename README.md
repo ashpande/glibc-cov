@@ -1,5 +1,7 @@
 # glibc-cov
-Repository to store the work of Glibc-coverage project for ELISA under communitybridge.
+Repository to store the work of Glibc-coverage project for ELISA under LFX. Link to talk at #6 ELISA workshop: https://youtu.be/Wppa9MTNzvo
+
+Link to Linux Foundation Mentee Profile: https://mentorship.lfx.linuxfoundation.org/mentee/5f570491-9268-4250-a64d-9b5d386444e2
 
 ISO 26262, requires the measurement of structural coverage (=code coverage) and explains the importance of this method for the development of safety-related SW.
 
